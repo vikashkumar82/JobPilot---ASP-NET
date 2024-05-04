@@ -1,0 +1,386 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B5568C51-8753-4BE0-9AA3-E3985275FDC6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JobPilot</RootNamespace>
+    <AssemblyName>JobPilot</AssemblyName>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin _Login\AdminLogging.aspx" />
+    <Content Include="Admin _Login\banner.png" />
+    <Content Include="Admin _Login\Dashboard.aspx" />
+    <Content Include="Company_Login\company-billing.aspx" />
+    <Content Include="Company_Login\company-job-application.aspx" />
+    <Content Include="Company_Login\company-page-profile.aspx" />
+    <Content Include="Company_Login\company-question.aspx" />
+    <Content Include="Company_Login\CompanyLogin.aspx" />
+    <Content Include="Company_Login\CompanyLogout.aspx" />
+    <Content Include="Company_Login\CompanyPostJob.aspx" />
+    <Content Include="Company_Login\CompanyPprofile.aspx" />
+    <Content Include="Company_Login\CompanyRegister.aspx" />
+    <Content Include="Company_Login\CompanySetting.aspx" />
+    <Content Include="Company_Login\WebForm1.aspx" />
+    <Content Include="Company_Login\delete-company-question.aspx" />
+    <Content Include="CSS\StyleSheet1.css" />
+    <Content Include="index.aspx" />
+    <Content Include="job-description.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Logout.aspx" />
+    <Content Include="Picture\auth-img.png" />
+    <Content Include="Picture\banner.png" />
+    <Content Include="Picture\bookmark.png" />
+    <Content Include="Picture\bookmarked.png" />
+    <Content Include="Picture\clipboard.png" />
+    <Content Include="Picture\hero-img.png" />
+    <Content Include="Picture\location.png" />
+    <Content Include="Picture\logo.svg" />
+    <Content Include="Picture\logowhite.png" />
+    <Content Include="Picture\model-image.jpg" />
+    <Content Include="Picture\pen.png" />
+    <Content Include="Picture\profile.png" />
+    <Content Include="Picture\scenery.jpg" />
+    <Content Include="Picture\settingPic.jpg" />
+    <Content Include="Picture\study.jpg" />
+    <Content Include="Picture\PenTip.png" />
+    <Content Include="Profile.aspx" />
+    <Content Include="Register.aspx" />
+    <Content Include="Setting.aspx" />
+    <Content Include="update-user-experience.aspx" />
+    <Content Include="user-delete-education.aspx" />
+    <Content Include="user-experience-delete.aspx" />
+    <Content Include="user-update-education.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin _Login\AdminLogging.aspx.cs">
+      <DependentUpon>AdminLogging.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin _Login\AdminLogging.aspx.designer.cs">
+      <DependentUpon>AdminLogging.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin _Login\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin _Login\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="company-header-footer.Master.cs">
+      <DependentUpon>company-header-footer.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="company-header-footer.Master.designer.cs">
+      <DependentUpon>company-header-footer.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Company_Login\company-billing.aspx.cs">
+      <DependentUpon>company-billing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company_Login\company-billing.aspx.designer.cs">
+      <DependentUpon>company-billing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company_Login\company-job-application.aspx.cs">
+      <DependentUpon>company-job-application.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company_Login\company-job-application.aspx.designer.cs">
+      <DependentUpon>company-job-application.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company_Login\company-page-profile.aspx.cs">
+      <DependentUpon>company-page-profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company_Login\company-page-profile.aspx.designer.cs">
+      <DependentUpon>company-page-profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company_Login\company-question.aspx.cs">
+      <DependentUpon>company-question.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company_Login\company-question.aspx.designer.cs">
+      <DependentUpon>company-question.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company_Login\CompanyLogin.aspx.cs">
+      <DependentUpon>CompanyLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company_Login\CompanyLogin.aspx.designer.cs">
+      <DependentUpon>CompanyLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company_Login\CompanyLogout.aspx.cs">
+      <DependentUpon>CompanyLogout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company_Login\CompanyLogout.aspx.designer.cs">
+      <DependentUpon>CompanyLogout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company_Login\CompanyPostJob.aspx.cs">
+      <DependentUpon>CompanyPostJob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company_Login\CompanyPostJob.aspx.designer.cs">
+      <DependentUpon>CompanyPostJob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company_Login\CompanyPprofile.aspx.cs">
+      <DependentUpon>CompanyPprofile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company_Login\CompanyPprofile.aspx.designer.cs">
+      <DependentUpon>CompanyPprofile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company_Login\CompanyRegister.aspx.cs">
+      <DependentUpon>CompanyRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company_Login\CompanyRegister.aspx.designer.cs">
+      <DependentUpon>CompanyRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company_Login\CompanySetting.aspx.cs">
+      <DependentUpon>CompanySetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company_Login\CompanySetting.aspx.designer.cs">
+      <DependentUpon>CompanySetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company_Login\delete-company-question.aspx.cs">
+      <DependentUpon>delete-company-question.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company_Login\delete-company-question.aspx.designer.cs">
+      <DependentUpon>delete-company-question.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="header-footer.Master.cs">
+      <DependentUpon>header-footer.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="header-footer.Master.designer.cs">
+      <DependentUpon>header-footer.Master</DependentUpon>
+    </Compile>
+    <Compile Include="job-description.aspx.cs">
+      <DependentUpon>job-description.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="job-description.aspx.designer.cs">
+      <DependentUpon>job-description.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main-company.Master.cs">
+      <DependentUpon>main-company.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main-company.Master.designer.cs">
+      <DependentUpon>main-company.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Company_Login\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company_Login\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main-user.Master.cs">
+      <DependentUpon>main-user.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main-user.Master.designer.cs">
+      <DependentUpon>main-user.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Setting.aspx.cs">
+      <DependentUpon>Setting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setting.aspx.designer.cs">
+      <DependentUpon>Setting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="update-user-experience.aspx.cs">
+      <DependentUpon>update-user-experience.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="update-user-experience.aspx.designer.cs">
+      <DependentUpon>update-user-experience.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user-delete-education.aspx.cs">
+      <DependentUpon>user-delete-education.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user-delete-education.aspx.designer.cs">
+      <DependentUpon>user-delete-education.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user-experience-delete.aspx.cs">
+      <DependentUpon>user-experience-delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user-experience-delete.aspx.designer.cs">
+      <DependentUpon>user-experience-delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user-update-education.aspx.cs">
+      <DependentUpon>user-update-education.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user-update-education.aspx.designer.cs">
+      <DependentUpon>user-update-education.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="main-user.Master" />
+    <Content Include="main-company.Master" />
+    <Content Include="header-footer.Master" />
+    <Content Include="company-header-footer.Master" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CompanyLogoPic\" />
+    <Folder Include="CompanyProfilePic\" />
+    <Folder Include="ProfilePic\" />
+    <Folder Include="user-resume\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60271</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:60271/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
